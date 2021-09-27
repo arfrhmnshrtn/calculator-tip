@@ -22,6 +22,7 @@ body{
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     width: auto;
+    /* background-color: red; */
 }
 .wrapper .container-input{
     /* background-color: red; */
@@ -152,5 +153,45 @@ body{
         grid-template-columns: 1fr;
         margin: 0 20px;
         width: auto;
+    }
+    .wrapper .container-input{
+        /* background-color: red; */
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .select-tip .wrapp-button-persen{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .wrapper .container-input{
+        /* background-color: red; */
+        margin-right: 0;
+    }
+    .wrapper .container-input{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .select-tip .wrapp-button-persen{
+        grid-template-columns: 1fr 1fr;
+    }
+    .select-tip .wrapp-button-persen button{
+        /* width: 100%; */
+    }
+    .wrapper{
+        width: auto;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .select-tip .wrapp-button-persen{
+        grid-template-columns: 1fr;
+    }
+    .select-tip .wrapp-button-persen button{
+        width: 100%;
     }
 }
