@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator Tip</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="">
+        <div class="wrapper">
+            
+            <div class="container-input">
+                <!-- input jumlah usd -->
+                <div class="input">
+                    <div class="input-usd">
+                        <h3 class="judul">Bill</h3>
+                        <div class="wrapp-input-usd">
+                            <input type="number" name="usd" id="usd" value="">
+                            <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- jumlah tip -->
+                <div class="select-tip">
+                    <h3 class="judul">Select Tip %</h3>
+                    <div class="wrapp-button-persen">
+                        <button type="button" value="5">5%</button>
+                        <button type="button" value="10">10%</button>
+                        <button type="button" value="15">15%</button>
+                        <button type="button" value="25">25%</button>
+                        <button type="button" value="50">50%</button>
+                        <input type="text" name="custom-button" id="custom-button" value="" placeholder="CUSTOM">
+                    </div>
+                </div>
+
+                <!-- jumlah orang/people -->
+                <div class="people">
+                    <h3 class="judul">Number Of People</h3>
+                    <div class="wrapp-input-people">
+                        <input type="number" name="people" id="people" value="">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                    </div>
+                </div>
+
+                <!-- <div class="btn-submit">
+                    <button type="submit">Submit</button>
+                </div> -->
+            </div>
+
+            <div class="container-hasil">
+                <div class="atas">
+                    <div class="hasil tip-amount">
+                        <div class="wrapp-text">
+                            <h3>Tip Amount</h3>
+                            <p>/ Person</p>
+                        </div>
+                        <h2 class="jumlah-amount-person"><i class="fas fa-dollar-sign"></i><span id="jumlah-tip" class="jumlah">0</span></h2>
+                    </div>
+        
+                    <div class="hasil total">
+                        <div class="wrapp-text">
+                            <h3>Total</h3>
+                            <p>/ Person</p>
+                        </div>
+                        <h2 class="jumlah-amount-person"><i class="fas fa-dollar-sign"></i><span id="jumlah-total" class="jumlah">0</span></h2>
+                    </div>
+                </div>
+
+                <div class="btn-reset">
+                    <button id="btn-reset" type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

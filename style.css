@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(197,228,231);
+    display: grid;
+    place-items: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+.wrapper .container-input{
+    /* background-color: red; */
+    margin-right: 30px;
+}
+.wrapper .container-input .input{
+    padding: 30px 0;
+}
+.wrapper .container-input .input .wrapp-input-usd, .people .wrapp-input-people{
+    position: relative;
+}
+.wrapper .container-input .input .wrapp-input-usd input, .people .wrapp-input-people input{
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.wrapper .container-input .input .wrapp-input-usd input:focus, .people .wrapp-input-people input:focus{
+    border: 2px solid rgb(38,192,171);
+}
+.wrapper .container-input .input .wrapp-input-usd .icon, .people .wrapp-input-people .icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    opacity: 0.5;
+}
+
+.select-tip .wrapp-button-persen{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.select-tip .wrapp-button-persen button{
+    padding: 5px 30px;
+    background-color: rgb(0,73,77);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.select-tip .wrapp-button-persen input{
+    border-radius: 5px;
+    border: 2px solid rgb(0,73,77);
+    outline: none;
+    padding-left: 20px;
+    color: rgb(0,73,77);
+    font-weight: 600;
+}
+.select-tip .wrapp-button-persen button:hover{
+    background-color: rgb(146,223,213);
+    color: rgb(0,73,77);
+}
+.wrapp-button-persen button:focus{
+    background-color: rgb(146,223,213);
+    color: rgb(0,73,77);
+}
+.people{
+    margin-top: 30px;
+}
+
+.container-hasil{
+    background-color: rgb(0,73,77);
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hasil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.hasil .wrapp-text h3{
+    font-size: 1rem;
+}
+.hasil .wrapp-text p{
+    font-size: .7rem;
+    opacity: .5;
+}
+.btn-reset{
+    width: 100%;
+    /* padding-top: 150px; */
+}
+.btn-reset button, .btn-submit button{
+    width: 100%;
+    padding: 10px 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(0,73,77);
+    cursor: pointer;
+}
+.btn-submit button{
+    margin-top: 30px;
+    background-color: rgb(0,73,77);
+    color: #fff;
+}
+.jumlah-amount-person{
+    font-size: 2rem;
+}
+.jumlah-amount-person .jumlah{
+    margin-left: 10px;
+}
+.judul{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1188px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+        width: auto;
+    }
+}
